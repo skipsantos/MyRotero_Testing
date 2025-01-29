@@ -46,10 +46,7 @@ describe('No Internet Test', () => {
         let logoutTitle = "Confirm Sign Out";
         let logoutMessage = "Are you sure you want to sign out? Any unsaved changes will be lost.";
 
-        for (let i = 0; i < 15; i++) {
-            await driver.pause(10000);
-            await driver.queryAppState("com.mysuki.myrotero") == 4
-        }
+        await driver.pause(5000);
 
         await homeScreen.actionBar.isDisplayed();
 
@@ -170,10 +167,7 @@ describe('Login with password visible', () => {
 
         await pageLogin.clickButtonLogin(); 
         
-        for (let i = 0; i < 15; i++) {
-            await driver.pause(10000);
-            await driver.queryAppState("com.mysuki.myrotero") == 4
-        }
+        await driver.pause(5000);
 
         await homeScreen.actionBar.isDisplayed();
 
@@ -219,10 +213,7 @@ describe('Valid Login (Happy Case)', () => {
 
         await pageLogin.clickButtonLogin(); 
         
-        for (let i = 0; i < 15; i++) {
-            await driver.pause(10000);
-            await driver.queryAppState("com.mysuki.myrotero") == 4
-        }
+        await driver.pause(5000);
 
         await homeScreen.actionBar.isDisplayed();
 

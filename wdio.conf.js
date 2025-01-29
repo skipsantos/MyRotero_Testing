@@ -22,7 +22,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-       './tests/specs/**.js'
+        './tests/specs/**.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -59,8 +59,7 @@ exports.config = {
         "appium:appPackage": "com.mysuki.myrotero",
         "appium:appActivity": "com.mysuki.myrotero.ui.main.MainActivity",
         "appium:noReset": true,
-        "appium:chromedriverExecutable": "/Users/skipp/Documents/Automation_Testing/chromedriver",
-        "appium:newCommandTimeout": 600    
+        "appium:chromedriverExecutable": "/Users/skipsantos/Documents/Automation Testing/chromedriver"
     }],
 
     //
@@ -110,7 +109,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: [],
+    services: ['appium'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -139,7 +138,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 400000
+        timeout: 60000
     },
 
     //
